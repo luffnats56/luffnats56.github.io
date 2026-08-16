@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Illucente Case — Links</title>
+<meta name="description" content="Illucente Case — hand-painted anime phone cases. Order a custom case, shop my supplies, contact me.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #fdf7f2;              /* warm cream */
+    --card: #ffffff;
+    --ink: #3d3440;             /* warm dark text */
+    --muted: #9a8ba0;
+    --gold: #e8b923;            /* brand gold */
+    --gold-deep: #c99a12;
+    --lavender: #b8a6e8;
+    --pink: #f4a7c3;
+    --shadow: 0 6px 20px rgba(160, 120, 90, 0.12);
+    --radius: 18px;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: 'Nunito', 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 48px 20px 40px;
+    position: relative;
+    overflow-x: hidden;
+  }
+  /* subtle floating sparkles */
+  .sparkle { position: fixed; font-size: 14px; opacity: .35; animation: float 6s ease-in-out infinite; pointer-events: none; user-select: none; }
+  @keyframes float {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-14px) rotate(12deg); }
+  }
+  main {
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+  /* avatar */
+  .avatar {
+    width: 96px; height: 96px;
+    margin: 0 auto 14px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--gold) 0%, var(--pink) 55%, var(--lavender) 100%);
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 42px; font-weight: 700; color: #fff;
+    box-shadow: 0 8px 24px rgba(232, 185, 35, 0.35);
+    border: 4px solid #fff;
+  }
+  h1 { font-family: 'Quicksand', sans-serif; font-size: 26px; font-weight: 700; letter-spacing: .3px; }
+  .tagline { color: var(--muted); font-size: 15px; font-weight: 600; margin-top: 6px; line-height: 1.5; }
+  .badge {
+    display: inline-block;
+    background: #fff;
+    border: 1.5px solid var(--gold);
+    color: var(--gold-deep);
+    font-size: 11px; font-weight: 800;
+    padding: 3px 10px; border-radius: 999px;
+    margin-top: 10px; letter-spacing: .4px;
+    text-transform: uppercase;
+  }
+  /* buttons */
+  .links { margin-top: 26px; display: flex; flex-direction: column; gap: 12px; }
+  .link {
+    display: flex; align-items: center; gap: 14px;
+    background: var(--card);
+    border: 1.5px solid #f0e4dc;
+    border-radius: var(--radius);
+    padding: 14px 18px;
+    text-decoration: none; color: var(--ink);
+    font-weight: 700; font-size: 15.5px;
+    box-shadow: var(--shadow);
+    transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+    text-align: left;
+    min-height: 54px;
+  }
+  .link:hover, .link:focus-visible {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 26px rgba(160, 120, 90, 0.18);
+    border-color: var(--gold);
+    outline: none;
+  }
+  .link:active { transform: translateY(0); }
+  .link .emoji { font-size: 24px; width: 32px; text-align: center; flex-shrink: 0; }
+  .link .label { flex: 1; }
+  .link .arrow { color: var(--muted); font-size: 15px; flex-shrink: 0; }
+  .link.primary { background: linear-gradient(135deg, var(--gold) 0%, #f2c94c 100%); border-color: transparent; color: #5a4500; }
+  .link.primary .arrow { color: #7a6100; }
+  /* footer */
+  footer { margin-top: 30px; color: var(--muted); font-size: 12.5px; font-weight: 600; }
+  footer .heart { color: var(--pink); }
+  @media (max-width: 380px) {
+    body { padding: 36px 16px 32px; }
+    .link { font-size: 14.5px; padding: 13px 15px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .sparkle { animation: none; }
+    .link { transition: none; }
+  }
+</style>
+</head>
+<body>
+
+<main>
+  <header>
+    <div class="avatar">I</div>
+    <h1>Illucente Case</h1>
+    <p class="tagline">Hand-painted anime phone cases 🎨<br>Custom orders worldwide ✨</p>
+    <span class="badge">🛍️ Order a case</span>
+  </header>
+
+  <!-- Buttons are rendered from the LINKS list at the bottom of this file -->
+  <nav class="links" id="links"></nav>
+
+  <footer>Made with <span class="heart">♥</span> · Illucente Case</footer>
+</main>
+
+<!-- ✨ FLOATING SPARKLES (decorative) -->
+<div class="sparkle" style="top:8%;left:6%;animation-delay:0s">✨</div>
+<div class="sparkle" style="top:22%;right:8%;animation-delay:1.2s;font-size:11px">⭐</div>
+<div class="sparkle" style="top:65%;left:4%;animation-delay:2.1s;font-size:11px">⭐</div>
+<div class="sparkle" style="bottom:12%;right:5%;animation-delay:.6s">✨</div>
+
+<script>
+'use strict';
+/* ============================================================
+   ✏️  EDIT YOUR LINKS HERE — replace the "https://YOUR-LINK..."
+   values with your real links. Ready links are already filled.
+   ============================================================ */
+var LINKS = [
+  {
+    emoji: '🎨',
+    label: 'Order a custom case',
+    href: 'https://t.me/Illucentecase',
+    note: 'Telegram — ready ✅'
+  },
+  {
+    emoji: '✨',
+    label: 'Shop my supplies',
+    href: 'https://rzekl.com/c/1e8d114494933a1b0a2816525dc3e8/',
+    note: 'AliExpress affiliate — ready ✅'
+  },
+  {
+    emoji: '📌',
+    label: 'Etsy shop',
+    href: 'https://YOUR-ETSY-SHOP-LINK-HERE',
+    note: 'Paste your Etsy shop URL when you create it'
+  },
+  {
+    emoji: '💬',
+    label: 'Business contact',
+    href: 'mailto:luffnats56@gmail.com',
+    note: 'Use your real business email'
+  },
+  {
+    emoji: '📍',
+    label: 'Pinterest',
+    href: 'https://ru.pinterest.com/luffnats56/illucente-case',
+    note: 'Ready ✅'
+  },
+  {
+    emoji: '▶️',
+    label: 'Watch my art on YouTube',
+    href: 'https://www.youtube.com/@illucentecase',
+    note: 'Ready ✅'
+  }
+];
+
+/* render — no need to edit below this line */
+(function () {
+  var nav = document.getElementById('links');
+  LINKS.forEach(function (link) {
+    var a = document.createElement('a');
+    a.className = 'link' + (link.primary ? ' primary' : '');
+    a.href = link.href;
+    a.target = '_blank';
+    a.rel = 'noopener';
+    a.setAttribute('aria-label', link.label + (link.note ? ' — ' + link.note : ''));
+    var emoji = document.createElement('span');
+    emoji.className = 'emoji';
+    emoji.textContent = link.emoji;
+    var label = document.createElement('span');
+    label.className = 'label';
+    label.textContent = link.label;
+    var arrow = document.createElement('span');
+    arrow.className = 'arrow';
+    arrow.textContent = '→';
+    a.appendChild(emoji);
+    a.appendChild(label);
+    a.appendChild(arrow);
+    nav.appendChild(a);
+  });
+})();
+</script>
+</body>
+</html>
