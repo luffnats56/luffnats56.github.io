@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Hermes</title>
+<meta name="description" content="Privacy policy for Hermes, a personal automation tool that connects to its owner's own Google account.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #fdf7f2;
+    --card: #ffffff;
+    --ink: #3d3440;
+    --muted: #9a8ba0;
+    --gold: #e8b923;
+    --gold-deep: #c99a12;
+    --shadow: 0 6px 20px rgba(160, 120, 90, 0.12);
+    --radius: 18px;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: 'Nunito', 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.65;
+    padding: 48px 20px 56px;
+  }
+  main {
+    max-width: 680px;
+    margin: 0 auto;
+    background: var(--card);
+    border: 1.5px solid #f0e4dc;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 38px 34px 42px;
+  }
+  h1 { font-family: 'Quicksand', sans-serif; font-size: 27px; font-weight: 700; letter-spacing: .2px; }
+  .updated { color: var(--muted); font-size: 13.5px; font-weight: 700; margin-top: 6px; }
+  h2 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 17.5px; font-weight: 700;
+    margin: 28px 0 8px;
+    padding-left: 11px;
+    border-left: 3.5px solid var(--gold);
+  }
+  p, li { font-size: 15px; }
+  p { margin-bottom: 10px; }
+  ul { margin: 6px 0 12px 22px; }
+  li { margin-bottom: 5px; }
+  a { color: var(--gold-deep); font-weight: 700; text-decoration: none; border-bottom: 1.5px solid rgba(232,185,35,.45); }
+  a:hover { border-bottom-color: var(--gold-deep); }
+  code {
+    font-family: ui-monospace, 'Cascadia Code', Consolas, monospace;
+    font-size: 13px;
+    background: #faf3ec;
+    padding: 1.5px 6px;
+    border-radius: 6px;
+  }
+  .callout {
+    background: #fdf7f2;
+    border: 1.5px solid #f0e4dc;
+    border-radius: 14px;
+    padding: 14px 18px;
+    margin: 14px 0 6px;
+    font-size: 14.5px;
+  }
+  footer { margin-top: 32px; padding-top: 18px; border-top: 1.5px solid #f0e4dc; color: var(--muted); font-size: 13.5px; font-weight: 600; }
+  @media (max-width: 420px) {
+    body { padding: 28px 14px 40px; }
+    main { padding: 26px 20px 30px; }
+    h1 { font-size: 23px; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <h1>Privacy Policy</h1>
+  <p class="updated">Application: <strong>Hermes</strong> &nbsp;·&nbsp; Last updated: 14 September 2026</p>
+
+  <h2>What Hermes is</h2>
+  <p>
+    Hermes is a private, personal automation tool operated by a single individual
+    (the "Operator") on their own computer. It is not a public product, has no
+    sign-up, and is not offered to other users. It connects to the Operator's own
+    Google Account so the Operator can read and manage their own mail, calendar,
+    files and documents through their own tooling.
+  </p>
+
+  <h2>Google user data accessed</h2>
+  <p>With the Operator's explicit consent, Hermes may access the following data from the Operator's own Google Account, limited to the scopes granted at authorization time:</p>
+  <ul>
+    <li><strong>Gmail</strong> — read messages, send messages, and manage labels on the Operator's own mailbox.</li>
+    <li><strong>Google Calendar</strong> — read and create events on the Operator's own calendars.</li>
+    <li><strong>Google Drive</strong> — read, upload and manage files in the Operator's own Drive.</li>
+    <li><strong>Google Sheets and Docs</strong> — read and edit spreadsheets and documents owned by the Operator.</li>
+    <li><strong>Contacts</strong> — read the Operator's own contacts.</li>
+  </ul>
+  <p>Only scopes required for a requested action are requested, and access can be revoked at any time as described below.</p>
+
+  <h2>How data is used and stored</h2>
+  <ul>
+    <li>All processing happens <strong>locally on the Operator's own computer</strong>. There is no Hermes server, no cloud backend, and no third party receiving data.</li>
+    <li>An OAuth token is stored locally on the Operator's machine so the tool can act on the Operator's behalf without repeated sign-ins. It is not transmitted anywhere else.</li>
+    <li>Message and file content is read only to perform the action the Operator requested, and is not retained beyond the local session or cache needed for that action.</li>
+    <li>Data is <strong>never sold, rented, or shared</strong> with advertisers, data brokers, or any other party.</li>
+    <li>Data is <strong>not used</strong> to train or improve machine-learning models, and is not used for advertising or creditworthiness purposes.</li>
+  </ul>
+
+  <h2>Limited Use disclosure</h2>
+  <div class="callout">
+    Hermes's use and transfer of information received from Google APIs to any other app
+    will adhere to the
+    <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>,
+    including the <strong>Limited Use</strong> requirements.
+  </div>
+
+  <h2>Revoking access and deleting data</h2>
+  <p>
+    Access can be revoked at any time at
+    <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a>.
+    Revoking access immediately invalidates the locally stored token, after which Hermes
+    can no longer reach any Google data. Revocation, or deleting the local
+    <code>google_token.json</code> file, removes all stored credentials.
+  </p>
+
+  <h2>Security</h2>
+  <p>
+    Credentials and OAuth client secrets are kept in files on the Operator's own
+    machine, protected by the operating system's user account permissions. No
+    credentials are embedded in this website or published anywhere.
+  </p>
+
+  <h2>Changes to this policy</h2>
+  <p>
+    Any change will be published on this page with an updated revision date. The
+    current version always governs use of the application.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+    Questions about this policy or about data handling:
+    <a href="mailto:luffnats56@gmail.com">luffnats56@gmail.com</a>
+  </p>
+
+  <footer>
+    <a href="/">← Back to Illucente Case</a>
+  </footer>
+
+</main>
+</body>
+</html>
